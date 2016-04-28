@@ -18,6 +18,17 @@
     ]
   },
   {
+    "name" : "Custom",
+    "settings": [
+      {
+        "type": "checkbox",
+        "label": "Show 'Powered By Shopify?'",
+        "id": "show_powered_by",
+        "default": false
+      }
+    ]
+  },
+  {
     "name": "Colors",
     "settings": [
       {
