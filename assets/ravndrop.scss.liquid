@@ -45,46 +45,111 @@ a.buy-button.button:hover {
 }
 
 //CSS for h3h3 landing page "layout blank, and page.template.blank"
-#join-row {
-  margin-bottom: 50px;
+#vape-naysh-container h1,
+#vape-naysh-container h2,
+#vape-naysh-container h3,
+#vape-naysh-container h4,
+#vape-naysh-container h5,
+#vape-naysh-container h6 {
+  font-weight: 100;
+  color: white;
+}
+
+#vape-naysh-container * {
+  font-family: "Heiti TC", "Helvetica neue";
+  text-align: center;
+}
+
+#naysh-logo {
+  width: 150px;
 }
 
 #ethan-box {
-  background-image: url("https://cdn.shopify.com/s/files/1/1240/4006/files/Ethan_V1.png?18167113316648147925");
-  background-size: contain;
-  background-repeat: no-repeat;
-  box-sizing: boarder-box;
-  width: 50%;
-  padding: 50%;
+  padding: 40px;
 }
 
-.clothing-row {
-  height: 33%;
+#vape-naysh-pic {
+  margin: auto;
 }
 
-.clothing-col {
-  height: 100%;
+
+#join-row {
+  margin-bottom: 50px;
+  background-color: #F05D5E;
+  height: 300px;
 }
 
-//.clothing-col:hover {
-//  background-color: pink;
-//}
 
-#ethan-pic-wrapper {
-  position: absolute;
-  width: 1200px;
-  left: 50%;
-  margin-left: -600px;
+#buy-row {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  text-align: center;
+  background-color: #2DD881;
 }
 
-.hidden-details {
+#faq-row {
+  background-color: #0F7173;
+  min-height: 300px;
+  padding-bottom: 100px;
+}
+
+#faq-row li {
+  padding: 10px;
+  list-style-type: none;
+  text-align: left;
+}
+
+question::before {
+  content: "+";
+}
+
+question {
+  text-align: left !important;
+  color: white;
+  font-size: 26px;
+  display: block;
+  cursor: pointer;
+}
+
+answer {
+  margin-left: 40px;
+  text-align: left !important;
+  color: white;
+  color: white;
+  font-size: 22px;
   display: none;
 }
 
-.clothing-col:hover .hidden-details {
-  display: block;
+
+.btn {
+  background: #FFCF56;
+  color: #0F7173;
 }
 
-.item-detail-card {
-  background-color: white;
+#buy-one-button {
+  margin-right: 40px;
+  border-radius: 0;
+}
+
+#buy-many-button {
+  border-radius: 0;
+}
+
+#fupa-message {
+  color: white;
+}
+
+#how-many-div {
+  display: none;
+  color: white;
+  padding: 30px;
+}
+
+#how-many-label {
+  margin-right: 10px;
+}
+
+#how-many-input {
+  width: 50px;
+  color: black;
 }

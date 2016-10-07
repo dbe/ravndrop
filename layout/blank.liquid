@@ -1,6 +1,20 @@
 <html>
   <head>
     {{ content_for_header }}
+    {{ 'ravndrop.scss.css' | asset_url | stylesheet_tag }}
+    <meta property="bouncer:prevent_popup" content="true" /> 
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Vape Naysh Costume">
+    <meta property="og:url" content="https://www.ravndrop.com/pages/vape-naysh-costume">
+    <meta property="og:image" content="https://cdn.shopify.com/s/files/1/1240/4006/files/vapenayshFinal.png?14536239292133435584">
+    <meta property="og:description" content="Make papa Ethan proud and grab your Vape Naysh costume in time for Halloween">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
   </head>
   <body>
     {{ content_for_layout }}

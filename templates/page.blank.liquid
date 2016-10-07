@@ -1,107 +1,105 @@
 {% layout 'blank' %}
 
-{{ 'ravndrop.scss.css' | asset_url | stylesheet_tag }}
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-<div class="container">
+<div class="container-fluid" id="vape-naysh-container">
 
   <div class="row" id="join-row">
     <div class="col-xs-12">
-      <h1 style="text-align: center;">Want to join the #VapeNaysh?<h1>
+      <img src="https://cdn.shopify.com/s/files/1/1240/4006/files/Logo.png?14536239292133435584" id="naysh-logo">
+      <h1>Want to join the #VapeNaysh?<h1>
+      <h2>Order by October 9th to get it for Halloween!</h2>
     </div>
   </div>
 
   <div class="row" id="ethan-box">
-    {% comment %}
-    <div id="ethan-pic-wrapper">
-      <img src="https://cdn.shopify.com/s/files/1/1240/4006/files/Ethan_V1.png?4303912219549994206" id="ethan-pic">
-    </div>
-    {% endcomment %}
-    
-    <div class="row clothing-row">
-
-      <div class="col-xs-6 clothing-col">
-        <div class="hidden-details">
-          <div class="item-detail-card">
-            <img src="http://www.placehold.it/200x200/">
-            <p>
-              This is a description which would be in the item description card
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-xs-6 clothing-col">
-        <div class="hidden-details">
-          <div class="item-detail-card">
-            <img src="http://www.placehold.it/200x200/">
-            <p>
-              This is a description which would be in the item description card
-            </p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="row clothing-row">
-
-      <div class="col-xs-6 clothing-col">
-        <div class="hidden-details">
-          <div class="item-detail-card">
-            <img src="http://www.placehold.it/200x200/">
-            <p>
-              This is a description which would be in the item description card
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-xs-6 clothing-col">
-        <div class="hidden-details">
-          <div class="item-detail-card">
-            <img src="http://www.placehold.it/200x200/">
-            <p>
-              This is a description which would be in the item description card
-            </p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="row clothing-row">
-
-      <div class="col-xs-6 clothing-col">
-        <div class="hidden-details">
-          <div class="item-detail-card">
-            <img src="http://www.placehold.it/200x200/">
-            <p>
-              This is a description which would be in the item description card
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-xs-6 clothing-col">
-        <div class="hidden-details">
-          <div class="item-detail-card">
-            <img src="http://www.placehold.it/200x200/">
-            <p>
-              This is a description which would be in the item description card
-            </p>
-          </div>
-        </div>
-      </div>
-
+    <div class="col-xs-12">
+      <img class="img-responsive" id="vape-naysh-pic" src="https://cdn.shopify.com/s/files/1/1240/4006/files/vapenayshFinal.png?11084271206777472873">
     </div>
   </div>
 
   <div class="row" id="buy-row">
-    <p>Buy this entire Vape Naysh outfit for $49.99</p>
-    <button class="btn btn-primary">Buy now!</button>
+    <h2>Be #VapeNaysh for $49.99</h2>
+    <p id="fupa-message">10% of proceeds go to <a href="http://morrisonlee.com/fupa/" target="_blank">F.U.P.A</a></p>
+    <a class="btn btn-lg btn-vape" id="buy-one-button" href="https://www.ravndrop.com/cart/27077615617:1">I want one!</a>
+    <a class="btn btn-lg btn-vape" id="buy-many-button" href="#">I want a s**t load!</a>
+    <div id="how-many-div">
+      <label id="how-many-label">How many?</label>
+      <input id="how-many-input" type="number" min="1" value="2">
+      <a class="btn" id="buy-many-submit" href="https://www.ravndrop.com/cart/27077615617:2">Go!</a>
+    </div>
+  </div>
+
+  <div class="row" id="faq-row">
+    <h2>FAQs</h2>
+    <ul>
+
+      <li>
+        <question>
+          When can I expect my Vape Naysh outfit?
+        </question>
+        <answer>
+          We have a guaranteed delivery date of the 28th of October. We are going to do our best to get them out sooner.
+        </answer>
+      </li>
+
+      <li>
+        <question>
+          What size outfit is this?
+        </question>
+        <answer>
+          We've sized it to fit most big, beautiful, bold men so expect somewhere around a men's large with flexible material.
+        </answer>
+      </li>
+
+      <li>
+        <question>
+          Will I look exactly like Ethan?
+        </question>
+        <answer>
+          While noone can look exactly like Ethan (too sexy,) you'll be pretty close. All accessories are our closest matches for style, comfort and color.
+        </answer>
+      </li>
+
+      <li>
+        <question>
+          Hey, I changed my mind, I don't want my costume anymore!
+        </question>
+        <answer>
+          Well, unfortunately, because this is a mass buy and a super cheap costume, we are unable to cancel orders. If, for any reason, we are unable to get you your costume you'll be awarded a full refund.
+        </answer>
+      </li>
+
+      <li>
+        <question>
+          How much is shipping?
+        </question>
+        <answer>
+          All of the items ship within the continental United States for $10 buckaroonis.
+        </answer>
+      </li>
+    </ul>
   </div>
 
 </div>
+
+
+<script type="text/javascript">
+  $('question').click(function() {
+    $(this).siblings('answer').toggle();
+  });
+
+  $('#buy-many-button').click(function(event) {
+    $('#how-many-div').css("display", "inline");
+    $('#buy-many-button').hide();
+    event.preventDefault();
+  });
+
+  $('#how-many-input').on('input', function() {
+    var val = $(this).val();
+    $('#buy-many-submit').attr('href', 'https://www.ravndrop.com/cart/27077615617:' + val);
+  });
+</script>
+
+
+
+
+
