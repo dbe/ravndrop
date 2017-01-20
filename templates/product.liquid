@@ -7,7 +7,10 @@
 
   {% assign current_variant = product.selected_or_first_available_variant %}
 
-  {% if current_variant.inventory_quantity == 0 && current_variant.available %}
+  {% comment %}
+  Added by Brian to make sure we have a message when the items are out of stock.
+  {% endcomment %}
+  {% if current_variant.inventory_quantity <= 0 && current_variant.available %}
     <div class='out-of-stock'>
       <h3>
         This item is back ordered and may take many weeks to ship
